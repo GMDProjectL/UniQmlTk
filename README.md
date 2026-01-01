@@ -42,6 +42,7 @@ A pre-styled button component with consistent padding and font sizing.
 - CMake 3.16 or higher
 - C++20 compatible compiler
 - KDE Layer Shell (for overlay components)
+- [unisettings library](https://github.com/GMDProjectL/unisettings)
 
 ## Building
 
