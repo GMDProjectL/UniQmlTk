@@ -47,6 +47,15 @@ ApplicationWindow {
         x: root.width
         color: Universal.background
 
+        Rectangle {
+            id: leftBorder
+            width: 0
+            opacity: 0
+            anchors.left: parent.left
+            height: parent.height
+            color: Universal.accent
+        }
+
         ParallelAnimation {
             id: backgroundAnim
             running: false
@@ -83,6 +92,14 @@ ApplicationWindow {
                 to: 0.45
                 duration: 500
                 easing.type: Easing.OutSine
+            }
+
+            NumberAnimation {
+                target: leftBorder
+                property: "opacity"
+                from: 0
+                to: 1
+                duration: 500
             }
         }
 
@@ -178,6 +195,14 @@ ApplicationWindow {
             property: "opacity"
             to: 0
             duration: 250
+        }
+
+        NumberAnimation {
+            target: leftBorder
+            property: "opacity"
+            from: 1
+            to: 0
+            duration: 100
         }
 
         onFinished: root.close()

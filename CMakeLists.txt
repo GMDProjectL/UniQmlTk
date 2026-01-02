@@ -27,6 +27,8 @@ qt_add_qml_module(UniQmlTk
   QML_FILES UniButton.qml
   QML_FILES BaseSidebarShellOverlay.qml
   QML_FILES ThemeManager.qml
+  QML_FILES SelectableBackground.qml
+  QML_FILES PressableListDelegate.qml
 )
 
 target_link_libraries(UniQmlTk PRIVATE Qt6::Core Qt6::Quick Qt6::Gui)
