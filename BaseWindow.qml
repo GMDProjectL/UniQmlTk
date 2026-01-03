@@ -26,14 +26,17 @@ ApplicationWindow {
         color: Universal.background
 
         TapHandler {
-            onTapped: if (tapCount === 2) toggleMaximized()
+            onTapped: if (tapCount === 2)
+                          toggleMaximized()
             gesturePolicy: TapHandler.DragThreshold
         }
 
         DragHandler {
             target: titleBar
             grabPermissions: TapHandler.CanTakeOverFromAnything
-            onActiveChanged: if (active) { root.startSystemMove() }
+            onActiveChanged: if (active) {
+                                 root.startSystemMove()
+                             }
         }
     }
 
@@ -43,10 +46,10 @@ ApplicationWindow {
 
         Button {
             id: closeButton
-            text: "✕";
-            onClicked: root.close();
-            leftPadding: 20;
-            rightPadding: 20;
+            text: "✕"
+            onClicked: root.close()
+            leftPadding: 20
+            rightPadding: 20
             background: Rectangle {
                 color: closeButton.hovered ? "red" : Universal.background
             }

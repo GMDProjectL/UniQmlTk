@@ -5,3 +5,4 @@ BaseSidebarShellOverlay 1.0 BaseSidebarShellOverlay.qml
 ThemeManager 1.0 ThemeManager.qml
 SelectableBackground 1.0 SelectableBackground.qml
 PressableListDelegate 1.0 PressableListDelegate.qml
+UniLabel 1.0 UniLabel.qml
